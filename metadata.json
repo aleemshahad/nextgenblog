@@ -1,0 +1,7 @@
+{
+  "name": "NextGenGuides",
+  "description": "All-in-one modern multi-niche blog featuring AI tools, tech news, and tutorials.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

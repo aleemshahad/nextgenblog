@@ -1,27 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import TrendingTicker from './components/TrendingTicker';
-import Hero from './components/Hero';
-import CategoryGrid from './components/CategoryGrid';
-import LatestArticles from './components/LatestArticles';
-import AIToolsSection from './components/AIToolsSection';
-import Newsletter from './components/Newsletter';
-import Footer from './components/Footer';
-import ArticleDetail from './components/ArticleDetail';
-import CategoryPage from './components/CategoryPage';
-import AboutUs from './components/AboutUs';
-import Contact from './components/Contact';
-import PrivacyPolicy from './components/PrivacyPolicy';
-import TermsOfService from './components/TermsOfService';
-import ArticleManager from './components/ArticleManager';
-import ToolLayout from './components/tools/ToolLayout';
-import TextGenerator from './components/tools/TextGenerator';
-import ImageGenerator from './components/tools/ImageGenerator';
-import SeoTool from './components/tools/SeoTool';
-import VoiceTool from './components/tools/VoiceTool';
-import { ToolType, BlogPost } from './types';
+'use client'
 
-function App() {
+import React, { useState, useEffect } from 'react';
+import Navbar from '../components/Navbar';
+import TrendingTicker from '../components/TrendingTicker';
+import Hero from '../components/Hero';
+import CategoryGrid from '../components/CategoryGrid';
+import LatestArticles from '../components/LatestArticles';
+import AIToolsSection from '../components/AIToolsSection';
+import Newsletter from '../components/Newsletter';
+import Footer from '../components/Footer';
+import ArticleDetail from '../components/ArticleDetail';
+import CategoryPage from '../components/CategoryPage';
+import AboutUs from '../components/AboutUs';
+import Contact from '../components/Contact';
+import PrivacyPolicy from '../components/PrivacyPolicy';
+import TermsOfService from '../components/TermsOfService';
+import ArticleManager from '../components/ArticleManager';
+import ToolLayout from '../components/tools/ToolLayout';
+import TextGenerator from '../components/tools/TextGenerator';
+import ImageGenerator from '../components/tools/ImageGenerator';
+import SeoTool from '../components/tools/SeoTool';
+import VoiceTool from '../components/tools/VoiceTool';
+import { ToolType, BlogPost } from '../types';
+
+export default function HomePage() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [activeTool, setActiveTool] = useState<ToolType | null>(null);
   const [activeArticle, setActiveArticle] = useState<BlogPost | null>(null);
@@ -346,5 +348,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

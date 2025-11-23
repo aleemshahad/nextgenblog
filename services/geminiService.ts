@@ -1,6 +1,6 @@
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const ai = new GoogleGenAI(process.env.API_KEY || '');
+const ai = new GoogleGenerativeAI(process.env.API_KEY || '');
 
 export const generateText = async (prompt: string): Promise<string> => {
   try {
